@@ -636,3 +636,21 @@ Ran 1 tests containing 13 assertions.
 0 failures, 0 errors.
 {:test 1, :pass 13, :fail 0, :error 0, :type :summary}
 clj꞉problems.problem-3꞉> 
+; Syntax error compiling at (src/problems/problem_1.clj:31:1).
+; Unable to resolve symbol: filter-invoice-items in this context
+clj꞉problems.problem-1꞉> 
+nil
+clj꞉problems.problem-1꞉> 
+#'problems.problem-1/has-iva-19?
+clj꞉problems.problem-1꞉> 
+#'problems.problem-1/has-ret-fuente-1?
+clj꞉problems.problem-1꞉> 
+#'problems.problem-1/filter-invoice-items
+clj꞉problems.problem-1꞉> 
+#'problems.problem-1/invoice
+clj꞉problems.problem-1꞉> 
+({:invoice-item/id "ii3", :invoice-item/sku "SKU 3", :taxable/taxes [#:tax{:id "t3", :category :iva, :rate 19}]}
+ {:invoice-item/id "ii4",
+  :invoice-item/sku "SKU 3",
+  :retentionable/retentions [#:retention{:id "r2", :category :ret_fuente, :rate 1}]})
+clj꞉problems.problem-1꞉> 
